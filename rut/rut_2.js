@@ -1,0 +1,16 @@
+rut = '19890681';
+multiplicadores = [3, 2, 7, 6, 5, 4, 3, 2];
+
+suma = 0;
+// Aqui usamos el for de una manera diferente, haciendo que la variable reduzca su valor
+// i-- es lo mismo que i = i - 1
+for (let i = 7; i >= 0; i--) {
+  suma += rut[i] * multiplicadores[i];
+}
+
+resto = suma % 11;
+digito_verificador = 11 - resto;
+
+console.log('La suma es: ' + suma);
+console.log('El resto es: ' + resto);
+console.log('El digito verificador es: ' + digito_verificador);
