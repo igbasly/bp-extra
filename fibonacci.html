@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <script>
+
+    var fibonacci = function(length, n_1 = 0, n_2 = 0, i = 0){
+        var n = n_1 + n_2
+        if (n == 0){
+            n = 1
+        }
+        console.log("Item " + i + ":\n", n)
+
+        n_2 = n_1
+        n_1 = n
+        i++
+
+        if (i < length){
+            setTimeout(fibonacci, 1000, length, n_1, n_2, i)
+        }
+    }
+    </script>
+</html>
