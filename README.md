@@ -44,4 +44,7 @@ Todo esto es gratis.
 * Sol Covacich P: socovacich@uc.cl
 * Florencia Pesenti O: fbpesentia@uc.cl
 * [Sophie Mori](http://sophiemori.com): sophie@mit.edu
+* Ian Basly: igbasly@uc.cl
+* Pablo Flores: ptflores1@uc.cl
+* Valentina Barrera: vpbarrera@uc.cl
 
