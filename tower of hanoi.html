@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <script>
+
+    var movimiento = 1 // Contador de movientos.
+
+    // Definimos la funcion hanoi para simular un juego, donde:
+        // pisos es la cantidad de pisos que tendrá el juego
+        // inicio es la posición donde se encuentra la torre.
+        // destino será la posición a donde queramos mover la torre.
+        // libre es la posición sobrante.
+
+    var hanoi = function(pisos, inicio, destino, libre){
+
+        //Primero la función revisa si la cantidad de pisos es la que puede mover, es decir, 1.
+        if (pisos == 1){
+            console.log("Movimeinto ", movimiento, ": Se mueve ", pisos, " desde ", inicio, " hasta ", destino)
+            movimiento++
+            // si esto se cumple entonces se realiza el movimiento.
+        }
+        else{
+            // si no se cumple, entonces utilizamos recurción para mover los (n - 1) primero pisos hasta la posición libre.
+            hanoi(pisos - 1, inicio, libre, destino)
+
+            // así despejamos el último piso y lo movemos al destino.
+            console.log("Movimeinto ", movimiento, ": Se mueve ", pisos, " desde ", inicio, " hasta ", destino)
+            movimiento++
+
+            // por último, hay que traer de vuelta la los (n-1) primeros pisos que dejamos en la posición libre hasta el destino.
+            hanoi(pisos - 1, libre, destino, inicio)
+        }
+        
+    }
+
+
+    //  Ejemplo de torre de Hanoi para la función de abajo, donde se comienza con 5 discos en la posición A.
+
+    //      |       |       |
+    //      |       |       |
+    //      |       |       |
+    //   ------------------------
+    //      A       B       C
+
+    var n_pisos = 5
+    hanoi(n_pisos, "A", "C", "B") // Se ingresan las posiciones de esta forma, ya que se quiere mover la torre desde A hasta C, dejando B libre.
+
+
+    // Ahora pueden modificar los pisos y las posiciones como ustedes quieran :D
+
+    </script>
+
+</html>

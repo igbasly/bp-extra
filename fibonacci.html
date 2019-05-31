@@ -2,7 +2,7 @@
 <html>
     <script>
 
-    var fibonacci = function(length, n_1 = 0, n_2 = 0, i = 0){
+    var fibonacci = function(stop, n_1 = 0, n_2 = 0, i = 0){
         var n = n_1 + n_2
         if (n == 0){
             n = 1
@@ -13,9 +13,29 @@
         n_1 = n
         i++
 
-        if (i < length){
-            setTimeout(fibonacci, 500, length, n_1, n_2, i)
+        if (i < stop){
+            fibonacci(stop, n_1, n_2, i)
         }
+    }
+
+    var n_1 = 0
+    var n_2 = 0
+
+    var fibonacci2 = function(stop){
+
+        for (var counter = 0; counter < stop; counter++){
+            n = n_2 + n_1
+
+            if (n == 0){
+                n = 1
+            }
+
+            console.log("Item: " + counter + ":\n", n)
+
+            n_2 = n_1
+            n_1 = n
+        }
+
     }
     </script>
 </html>
