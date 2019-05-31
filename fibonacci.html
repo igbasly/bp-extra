@@ -2,31 +2,54 @@
 <html>
     <script>
 
-    var fibonacci = function(stop, n_1 = 0, n_2 = 0, i = 0){
-        var n = n_1 + n_2
-        if (n == 0){
+
+    //----- OPCION 1 ----
+
+    //stop: largo de la secuencia de fibonacci a mostrar
+    //n_1: valor del elemento anterior
+    //n_2: valor del elemento anterior a n_1
+    //i: posicion en la secuencia, este va de 0 hasta stop.
+
+    var fibonacci = function(stop, n_1 = 0, n_2 = 0, i = 0){ 
+        // Creamos la función fibonacci con valores iniciales (Ej: i = 0), esto permite que la varibale tome ese valor si es que no es ingreado.
+        var n = n_1 + n_2 // Calculamos el valor de numero fibonacci como la suma de los 2 anteriores
+        if (i == 0){ // en caso de que sea el primer elemento, siempre es 1, ya que n_1 = n_2 = 0.
             n = 1
         }
-        console.log("Item " + i + ":\n", n)
+        console.log("Item " + i + ":\n", n) // se imprime el valor n.
 
         n_2 = n_1
         n_1 = n
-        i++
+        i++ //pasamos al siguiente elemento.
+        //se mueven los datos n_1 -> n_2, n -> n_1
 
-        if (i < stop){
-            fibonacci(stop, n_1, n_2, i)
+        if (i < stop){ // si llegamos al stop, paramos la secuencia.
+            fibonacci(stop, n_1, n_2, i)  // sino, seguimos con la secuencia de forma recursiva.
         }
     }
+
+    //Para llamar esta función podemos escribir en la consola de Chrome:
+    //fibonacci(10)     Esto imprime los primero 10 elementos de fibonacci.
+
+
+    
+    // ----- OPCION 2 ------
+
 
     var n_1 = 0
     var n_2 = 0
 
+    //definimos como en la anterior los n-1 y n-2 valores como 0.
+
+    //esta función solo recibe el largo de fibonacci buscado.
     var fibonacci2 = function(stop){
 
-        for (var counter = 0; counter < stop; counter++){
-            n = n_2 + n_1
+        // A diferencia de la anterior, no es recursiva, sino que utiliza un for loop para calcular los valores
 
-            if (n == 0){
+        for (var counter = 0; counter < stop; counter++){
+            // El funcionamiento es el mismo que en la función anterior.
+            n = n_2 + n_1
+            if (counter == 0){
                 n = 1
             }
 
@@ -37,5 +60,12 @@
         }
 
     }
+    // Para llamar esta funcion solo basta con ingresar el largo de fibonacci requerido en la consola:
+    //fibonacci2(10)        Imprime los 10 primeros elementos
+
+    //Como pueden observar, en la primera función se muestra como calcular la serie de fibonacci
+    //de forma recursiva, en cambio, la segunda solo utiliza un for loop.
+    //La principal diferencia radica en donde declaramos las variables, es decir, en los argumentos de la
+    // funcion (dentro de los () ) para el primer caso o fuera de la función como varibales para el segundo caso. 
     </script>
 </html>
