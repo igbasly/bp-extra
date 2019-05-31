@@ -66,3 +66,5 @@ Aquí podrán encontrar material extra para practicar y experimentar en base a l
 * Pablo Flores: ptflores1@uc.cl
 * Valentina Barrera: vpbarrera@uc.cl
 * Manuel Solimano: masolimano@uc.cl
+* Erica Santana: epsr153@gmail.com
+
