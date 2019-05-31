@@ -5,3 +5,7 @@ Aquí podrán encontrar material extra para practicar y experimentar en base a l
 ## 💡 Recomendaciones:
 ## 🌐 Sitios de interés:
 ## 📇 Contactos:
+* Sol Covacich P: socovacich@uc.cl
+* Florencia Pesenti O: fbpesentia@uc.cl
+* 
+*
