@@ -1,6 +1,16 @@
 # **Beautiful Patterns Chile 2019:** Material extra 👨‍💻👩‍💻
 
-Aquí podrán encontrar material extra para practicar y experimentar en base a las actividades vistas durante la semana. Además hay algunos consejos que les pueden ser útiles al momento de parender sobre computación o programación junto a algunos sitios que les recomendamos fuertemente visiar, ya que son ideales para quienes se estén aventurando en el gran mundo de la computación.
+## ⚠️ **Importante** ⚠️
+
+Habilitamos un formulario para que se inscriban y nos dejen sus e-mails para invitarlos a futuros cursos, talleres o competencias que les puedan interesar.
+
+Formulario ⟹ [Link](https://forms.gle/rbtETV5gEnWgWhM86)
+
+🔄 Todo este material, incluido el formulario, lo pueden compartir con sus amigos para ellos también aprendan o se puedan informar de futuras actividades.
+
+---
+
+Aquí podrán encontrar material extra para practicar y experimentar en base a las actividades vistas durante la semana. Además hay algunos consejos que les pueden ser útiles al momento de parender sobre computación o programación junto a algunos sitios que les recomendamos fuertemente visitar, ya que son ideales para quienes se estén aventurando en el gran mundo de la computación.
 
 
 
@@ -57,6 +67,7 @@ Aquí podrán encontrar material extra para practicar y experimentar en base a l
 ### Canales de YouTube
 * [Derivando](https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA): Canal de YouTube en español. Divulgación de matemáticas y computación.
 * [Computerphile](https://www.youtube.com/user/Computerphile): Canal de YouTube con contenidos relacionados a las ciencias de la computación, en formato entrevista. Disponible en inglés. Algunos de los vídeos tienen subtítulos.
+
 ## 📇 Contactos
 
 * Sol Covacich P: socovacich@uc.cl
